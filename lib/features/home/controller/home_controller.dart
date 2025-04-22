@@ -8,10 +8,16 @@ abstract class _HomeControllerBase with Store {
   _HomeControllerBase(this.repository);
 
   @observable
-  ObservableList<PostModel> posts = ObservableList();
+  ObservableList<PostModel> posts = ObservableList<PostModel>();
+
+  @observable
+  bool loading = false;
 
   @action
-  fetchPosts() async {
-    posts = ObservableList.of(await repository.fetchPosts());
+  Future<void> loadPosts() async {
+    loading = true;
+    final result = await repository.fetchPosts();
+    posts = ObservableList<PostModel>.of(result);
+    loading = false;
   }
 }
