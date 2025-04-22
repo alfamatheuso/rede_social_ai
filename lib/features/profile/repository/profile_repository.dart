@@ -13,10 +13,10 @@ class ProfileRepository {
       userId: '2',
       name: 'Maria Oliveira',
       avatarUrl: 'https://placehold.it/200x200',
-      bio: 'Designer UI/UX e criadora de conteúdo.',
-      postsCount: 85,
-      followers: 1200,
-      following: 410,
+      bio: 'UI/UX Designer com foco em mobile.',
+      postsCount: 75,
+      followers: 1120,
+      following: 290,
     ),
     ProfileModel(
       userId: '3',
@@ -29,19 +29,13 @@ class ProfileRepository {
     ),
   ];
 
-  Future<ProfileModel> fetchProfile(String userId) async {
+  Future<ProfileModel?> fetchProfile(String userId) async {
     await Future.delayed(Duration(seconds: 1));
-    return _mockProfiles.firstWhere(
-      (profile) => profile.userId == userId,
-      orElse: () => ProfileModel(
-        userId: '0',
-        name: 'Usuário não encontrado',
-        avatarUrl: 'https://placehold.it/200x200',
-        bio: '',
-        postsCount: 0,
-        followers: 0,
-        following: 0,
-      ),
-    );
+    for (var profile in _mockProfiles) {
+      if (profile.userId == userId) {
+        return profile;
+      }
+    }
+    return null; //Caso não encontre retorna null
   }
 }
