@@ -1,10 +1,82 @@
 [
   {
-    "id": "101",
-    "userId": "1",
-    "content": "Olá, Flutter!",
-    "imageUrl": "https://placehold.it/300x200",
-    "likes": 10,
-    "comments": 2
+    'id': '101',
+    'userId': '1',
+    'content': 'Olá, Flutter!',
+    'imageUrl': 'https://placehold.it/300x200',
+    'likes': 10,
+    'comments': 2
+  },
+  {
+    'id': '102',
+    'userId': '1',
+    'content': 'Aprendendo MVC em Flutter, muito legal!',
+    'imageUrl': 'https://placehold.it/400x250',
+    'likes': 34,
+    'comments': 5
+  },
+  {
+    'id': '103',
+    'userId': '1',
+    'content': 'Desenvolvendo uma rede social mockada!',
+    'imageUrl': '',
+    'likes': 12,
+    'comments': 3
+  },
+  {
+    'id': '104',
+    'userId': '1',
+    'content': 'Quem mais ama Dart e Flutter?',
+    'imageUrl': 'https://placehold.it/350x200',
+    'likes': 25,
+    'comments': 6
+  },
+  {
+    'id': '105',
+    'userId': '1',
+    'content': 'Hoje finalizei todas as telas do meu app!',
+    'imageUrl': '',
+    'likes': 42,
+    'comments': 12
+  },
+  {
+    'id': '106',
+    'userId': '1',
+    'content': 'Próximas funcionalidades serão incríveis!',
+    'imageUrl': 'https://placehold.it/320x180',
+    'likes': 50,
+    'comments': 15
+  },
+  {
+    'id': '107',
+    'userId': '1',
+    'content': 'Responsividade é essencial em apps modernos.',
+    'imageUrl': '',
+    'likes': 18,
+    'comments': 4
+  },
+  {
+    'id': '108',
+    'userId': '1',
+    'content': 'Praticando com MobX e Providers em Flutter.',
+    'imageUrl': 'https://placehold.it/300x250',
+    'likes': 23,
+    'comments': 7
+  },
+  {
+    'id': '109',
+    'userId': '1',
+    'content': 'Adicionando suporte a acessibilidade!',
+    'imageUrl': '',
+    'likes': 33,
+    'comments': 8
+  },
+  {
+    'id': '110',
+    'userId': '1',
+    'content': 'Feliz com os resultados alcançados hoje!',
+    'imageUrl': 'https://placehold.it/380x220',
+    'likes': 60,
+    'comments': 20
   }
 ]
