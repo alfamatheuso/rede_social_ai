@@ -23,18 +23,15 @@ class PostItemWidget extends StatelessWidget {
             ],
             SizedBox(height: 10),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Row(children: [
-                  Icon(Icons.thumb_up, size: 18),
-                  SizedBox(width: 4),
-                  Text('${post.likes}'),
-                ]),
-                Row(children: [
-                  Icon(Icons.comment, size: 18),
-                  SizedBox(width: 4),
-                  Text('${post.comments}'),
-                ]),
+                Icon(Icons.thumb_up, size: 18),
+                SizedBox(width: 4),
+                Text('${post.likes}'),
+                SizedBox(width: 16),
+                Icon(Icons.comment, size: 18),
+                SizedBox(width: 4),
+                Text('${post.comments}'),
               ],
             ),
           ],
