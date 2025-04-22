@@ -1,17 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(App());
+  runApp(MyApp());
 }
 
-//lib/app.dart
-class App extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Rede Social',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/login',
-      routes: routes,
+    return MultiProvider(
+      providers: [
+        Provider<LoginController>(create: (_) => LoginController(LoginRepository())),
+        Provider<RegisterController>(create: (_) => RegisterController(RegisterRepository())),
+        Provider<HomeController>(create: (_) => HomeController(HomeRepository())),
+        Provider<ProfileController>(create: (_) => ProfileController(ProfileRepository())),
+        Provider<CreatePostController>(create: (_) => CreatePostController(CreatePostRepository())),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Social MVC',
+        initialRoute: '/login',
+        routes: routes,
+      ),
     );
   }
 }
