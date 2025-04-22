@@ -1,9 +1,14 @@
 class ProfileRepository {
-  final mockService = MockService();
-
   Future<ProfileModel> fetchProfile(String userId) async {
-    final data = await mockService.getMockData('users.json');
-    final userJson = data.firstWhere((user) => user['id'] == userId);
-    return ProfileModel.fromJson(userJson);
+    await Future.delayed(Duration(seconds: 1));
+    return ProfileModel(
+      userId: userId,
+      name: 'João Silva',
+      avatarUrl: 'https://placehold.it/200x200',
+      bio: 'Desenvolvedor Flutter apaixonado por tecnologia.',
+      postsCount: 120,
+      followers: 980,
+      following: 350,
+    );
   }
 }
