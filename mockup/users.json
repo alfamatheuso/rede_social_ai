@@ -5,7 +5,98 @@
     "email": "user@test.com",
     "password": "123456",
     "bio": "Desenvolvedor Flutter",
+    "photoUrl": "https://placehold.it/150x150",
     "followers": 150,
     "following": 120
+  },
+  {
+    "id": "2",
+    "name": "Maria Oliveira",
+    "email": "maria@test.com",
+    "password": "abcdef",
+    "bio": "UX Designer apaixonada por tecnologia",
+    "photoUrl": "https://placehold.it/151x151",
+    "followers": 200,
+    "following": 180
+  },
+  {
+    "id": "3",
+    "name": "Carlos Pereira",
+    "email": "carlos@test.com",
+    "password": "qwerty",
+    "bio": "Backend Developer especialista em APIs",
+    "photoUrl": "https://placehold.it/152x152",
+    "followers": 300,
+    "following": 250
+  },
+  {
+    "id": "4",
+    "name": "Ana Clara",
+    "email": "ana@test.com",
+    "password": "zxcvbn",
+    "bio": "Marketing Digital e Social Media",
+    "photoUrl": "https://placehold.it/153x153",
+    "followers": 400,
+    "following": 320
+  },
+  {
+    "id": "5",
+    "name": "Pedro Henrique",
+    "email": "pedro@test.com",
+    "password": "pedro123",
+    "bio": "Mobile Developer apaixonado por Flutter",
+    "photoUrl": "https://placehold.it/154x154",
+    "followers": 250,
+    "following": 220
+  },
+  {
+    "id": "6",
+    "name": "Juliana Costa",
+    "email": "juliana@test.com",
+    "password": "senha123",
+    "bio": "Front-end Developer e UI Designer",
+    "photoUrl": "https://placehold.it/155x155",
+    "followers": 350,
+    "following": 300
+  },
+  {
+    "id": "7",
+    "name": "Lucas Martins",
+    "email": "lucas@test.com",
+    "password": "lucas789",
+    "bio": "Game Developer e apaixonado por jogos",
+    "photoUrl": "https://placehold.it/156x156",
+    "followers": 500,
+    "following": 450
+  },
+  {
+    "id": "8",
+    "name": "Amanda Ribeiro",
+    "email": "amanda@test.com",
+    "password": "amanda456",
+    "bio": "Professora e Educadora em TI",
+    "photoUrl": "https://placehold.it/157x157",
+    "followers": 600,
+    "following": 550
+  },
+  {
+    "id": "9",
+    "name": "Rafael Santos",
+    "email": "rafael@test.com",
+    "password": "rafael321",
+    "bio": "DevOps Engineer e Cloud Specialist",
+    "photoUrl": "https://placehold.it/158x158",
+    "followers": 700,
+    "following": 650
+  },
+  {
+    "id": "10",
+    "name": "Gabriela Mendes",
+    "email": "gabriela@test.com",
+    "password": "gabriela987",
+    "bio": "Data Scientist e pesquisadora",
+    "photoUrl": "https://placehold.it/159x159",
+    "followers": 800,
+    "following": 750
   }
 ]
